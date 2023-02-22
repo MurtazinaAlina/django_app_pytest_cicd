@@ -2,6 +2,7 @@ import pytest
 from rest_framework.test import APIClient
 from model_bakery import baker
 
+from django_testing import settings
 from students.models import Course, Student
 
 
