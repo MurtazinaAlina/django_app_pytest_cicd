@@ -32,8 +32,8 @@ jobs:
           --health-timeout 5s
           --health-retries 5
     steps:
-      - name: Проверка репозитория на изменения
-        uses: actions/checkout@v3
+#      - name: Проверка репозитория на изменения
+#        uses: actions/checkout@v3
 
       - name: Установка python в git
         uses: actions/setup-python@v3
