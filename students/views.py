@@ -1,4 +1,6 @@
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.response import Response
+from rest_framework.views import APIView
 from rest_framework.viewsets import ModelViewSet
 
 from students.filters import CourseFilter
@@ -18,3 +20,7 @@ class StudentsViewSet(ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
     filter_backends = (DjangoFilterBackend,)
+
+class DemoView(APIView):
+    def get(self, request):
+        return Response({'status': 'OK, 200'})

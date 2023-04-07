@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
-from students.views import CoursesViewSet, StudentsViewSet
+from students.views import CoursesViewSet, StudentsViewSet, DemoView
 
 router = DefaultRouter()
 router.register("courses", CoursesViewSet)
@@ -26,4 +26,5 @@ router.register('students', StudentsViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/v1/", include(router.urls)),
+    path('api/v1/demo', DemoView.as_view())
 ]

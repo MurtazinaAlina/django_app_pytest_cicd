@@ -1,0 +1,5 @@
+[flake8]
+ignore=
+    F403
+    F401
+exclude=.pytest_cache,venv,.flake8,.gitignore,pytest.ini,README.md,requirements.txt,requirements-dev.txt,.env
