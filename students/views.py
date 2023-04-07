@@ -21,6 +21,7 @@ class StudentsViewSet(ModelViewSet):
     serializer_class = StudentSerializer
     filter_backends = (DjangoFilterBackend,)
 
+
 class DemoView(APIView):
     def get(self, request):
         return Response({'status': 'OK, 200'})
