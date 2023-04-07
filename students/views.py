@@ -24,4 +24,4 @@ class StudentsViewSet(ModelViewSet):
 
 class DemoView(APIView):
     def get(self, request):
-        return Response({'status': 'OK, 200'})
+        return Response({'status': 'Проверка связи'})
