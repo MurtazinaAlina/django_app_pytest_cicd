@@ -34,6 +34,8 @@ jobs:
     steps:
 #      - name: Проверка репозитория на изменения
 #        uses: actions/checkout@v3
+      - name: Отправка данных в репозиторий
+        run: git push origin cicd
 
       - name: Установка python в git
         uses: actions/setup-python@v3
