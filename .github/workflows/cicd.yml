@@ -3,6 +3,8 @@ name: Тестирование и развертывание джанго
 on:
   push:
     branches: [cicd]
+  commit:
+    branches: [cicd]
 
 jobs:
   tests:
